@@ -1,0 +1,45 @@
+SITE DORCAS NDEMBO — VERSION 1 SEUL FICHIER
+===========================================
+
+Ce dossier contient tout le site dans UN SEUL fichier HTML.
+Le CSS et le JavaScript sont deja integres a l'interieur du fichier.
+Il n'y a donc AUCUN dossier fonts / images / videos / assets a gerer :
+c'est normal, il n'y en a plus besoin.
+
+CONTENU
+-------
+index.html    -> le site complet (FR / ES / PT / EN)
+404.html      -> copie de index.html (pour que les URLs directes marchent)
+.nojekyll     -> fichier vide mais OBLIGATOIRE sur GitHub Pages
+LISEZ-MOI.txt -> ce fichier
+
+MISE EN LIGNE SUR GITHUB PAGES
+------------------------------
+1. Ouvre ton depot : github.com/Dorcas-N/dorcas-ndembo.portfolio
+2. Glisse-depose index.html, 404.html et .nojekyll a la racine
+   (remplace les anciens fichiers si on te le demande).
+3. Settings > Pages > Source : "Deploy from a branch", branche main, dossier / (root).
+4. Attends 1 a 2 minutes, puis ouvre :
+   https://dorcas-n.github.io/dorcas-ndembo.portfolio/
+
+Si le fichier .nojekyll n'apparait pas dans le glisser-deposer :
+sur GitHub, clique "Add file" > "Create new file", nomme-le .nojekyll,
+laisse le contenu vide et enregistre.
+
+TESTER EN LOCAL
+---------------
+Double-clique simplement sur index.html : il s'ouvre dans le navigateur
+et fonctionne, meme sans serveur et sans connexion (sauf les polices
+Google Fonts, qui necessitent internet).
+
+CHANGER LA LANGUE
+-----------------
+Le site detecte la langue du navigateur. On peut aussi forcer :
+  index.html?lang=fr   ?lang=es   ?lang=pt   ?lang=en
+
+MODIFIER LE CONTENU
+-------------------
+Ce fichier est du code compile : il n'est pas fait pour etre edite a la main.
+Pour changer un texte ou un tarif, on repart du projet source
+(dorcas-ndembo-site.zip), on modifie les fichiers dans
+packages/web/src/web/content/ puis on regenere.
